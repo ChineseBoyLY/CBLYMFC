@@ -1,0 +1,46 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: MyWc - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\Users\ADMINI~1\AppData\Local\Temp\RSP1C88.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /Fp"Debug/MyWc.pch" /Yu"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"C:\Users\Administrator\Desktop\My VC++6.0\11408211\MyWc\MyWc.cpp"
+"C:\Users\Administrator\Desktop\My VC++6.0\11408211\MyWc\MyWcDlg.cpp"
+]
+Creating command line "cl.exe @C:\Users\ADMINI~1\AppData\Local\Temp\RSP1C88.tmp" 
+Creating command line "link.exe /nologo /subsystem:windows /incremental:yes /pdb:"Debug/MyWc.pdb" /debug /machine:I386 /out:"Debug/MyWc.exe" /pdbtype:sept  ".\Debug\MyWc.obj" ".\Debug\MyWcDlg.obj" ".\Debug\StdAfx.obj" ".\Debug\WCSocket.obj" ".\Debug\MyWc.res" "
+<h3>Output Window</h3>
+Compiling...
+MyWc.cpp
+c:\users\administrator\desktop\my vc++6.0\11408211\mywc\mywcdlg.h(21) : error C2146: syntax error : missing ';' before identifier 'm_Dat'
+c:\users\administrator\desktop\my vc++6.0\11408211\mywc\mywcdlg.h(21) : error C2501: '_DATA' : missing storage-class or type specifiers
+c:\users\administrator\desktop\my vc++6.0\11408211\mywc\mywcdlg.h(21) : error C2501: 'm_Dat' : missing storage-class or type specifiers
+MyWcDlg.cpp
+c:\users\administrator\desktop\my vc++6.0\11408211\mywc\mywcdlg.h(21) : error C2146: syntax error : missing ';' before identifier 'm_Dat'
+c:\users\administrator\desktop\my vc++6.0\11408211\mywc\mywcdlg.h(21) : error C2501: '_DATA' : missing storage-class or type specifiers
+c:\users\administrator\desktop\my vc++6.0\11408211\mywc\mywcdlg.h(21) : error C2501: 'm_Dat' : missing storage-class or type specifiers
+C:\Users\Administrator\Desktop\My VC++6.0\11408211\MyWc\MyWcDlg.cpp(212) : error C2065: 'm_Dat' : undeclared identifier
+C:\Users\Administrator\Desktop\My VC++6.0\11408211\MyWc\MyWcDlg.cpp(212) : error C2228: left of '.m_type' must have class/struct/union type
+C:\Users\Administrator\Desktop\My VC++6.0\11408211\MyWc\MyWcDlg.cpp(213) : error C2228: left of '.m_strName' must have class/struct/union type
+C:\Users\Administrator\Desktop\My VC++6.0\11408211\MyWc\MyWcDlg.cpp(226) : error C2228: left of '.m_type' must have class/struct/union type
+C:\Users\Administrator\Desktop\My VC++6.0\11408211\MyWc\MyWcDlg.cpp(241) : error C2228: left of '.m_type' must have class/struct/union type
+C:\Users\Administrator\Desktop\My VC++6.0\11408211\MyWc\MyWcDlg.cpp(242) : error C2228: left of '.m_talkingName' must have class/struct/union type
+C:\Users\Administrator\Desktop\My VC++6.0\11408211\MyWc\MyWcDlg.cpp(244) : error C2228: left of '.m_type' must have class/struct/union type
+C:\Users\Administrator\Desktop\My VC++6.0\11408211\MyWc\MyWcDlg.cpp(245) : error C2228: left of '.m_dbData' must have class/struct/union type
+C:\Users\Administrator\Desktop\My VC++6.0\11408211\MyWc\MyWcDlg.cpp(246) : error C2228: left of '.m_dbData' must have class/struct/union type
+C:\Users\Administrator\Desktop\My VC++6.0\11408211\MyWc\MyWcDlg.cpp(247) : error C2228: left of '.m_strName' must have class/struct/union type
+Generating Code...
+Ö´ÐÐ cl.exe Ê±³ö´í.
+
+
+
+<h3>Results</h3>
+MyWc.exe - 1 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

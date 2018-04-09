@@ -1,0 +1,29 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: lab5 - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\Users\ADMINI~1\AppData\Local\Temp\RSP3757.tmp" with contents
+[
+WINMM.LIB /nologo /subsystem:windows /incremental:yes /pdb:"Debug/lab5.pdb" /debug /machine:I386 /out:"Debug/lab5.exe" /pdbtype:sept 
+".\Debug\lab5.obj"
+".\Debug\lab5Doc.obj"
+".\Debug\lab5View.obj"
+".\Debug\MainFrm.obj"
+".\Debug\StdAfx.obj"
+".\Debug\lab5.res"
+]
+Creating command line "link.exe @C:\Users\ADMINI~1\AppData\Local\Temp\RSP3757.tmp"
+<h3>Output Window</h3>
+Linking...
+
+
+
+<h3>Results</h3>
+lab5.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

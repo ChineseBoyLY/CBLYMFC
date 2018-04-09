@@ -1,0 +1,326 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (中国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\StuAdo.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.chs\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\StuAdo.ico"
+IDI_IMAGE               ICON    DISCARDABLE     "Windows.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 235, 55
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于 StuAdo"
+FONT 9, "宋体"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "StuAdo 1.0 版",IDC_STATIC,40,10,119,8,SS_NOPREFIX
+    LTEXT           "版权所有 (C) 2014",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "确定",IDOK,178,7,50,14,WS_GROUP
+END
+
+IDD_STUADO_DIALOG DIALOGEX 0, 0, 414, 283
+STYLE DS_MODALFRAME | DS_3DLOOK | WS_POPUP | WS_VISIBLE | WS_CAPTION | 
+    WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "11级计科二班by刘毅"
+MENU IDR_MENU1
+FONT 10, "宋体"
+BEGIN
+    LISTBOX         IDC_LISTDATABASE,25,20,282,150,LBS_NOINTEGRALHEIGHT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "学号",IDC_STATIC,25,195,17,8
+    EDITTEXT        IDC_ID,45,195,37,14,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "姓名",IDC_STATIC,92,195,17,8
+    EDITTEXT        IDC_NAME,111,195,54,14,ES_AUTOHSCROLL
+    LTEXT           "籍贯",IDC_STATIC,179,195,17,8
+    EDITTEXT        IDC_ADDRESS,201,195,78,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "添加",IDC_ADD,29,253,50,14
+    PUSHBUTTON      "删除",IDC_DELETE,93,253,50,14
+    PUSHBUTTON      "修改",IDC_MODIFY,157,252,50,14
+    PUSHBUTTON      "查询所有记录",IDC_LISTALL,321,134,67,15
+    PUSHBUTTON      "退出",IDC_EXITSYS,221,251,50,14
+    PUSHBUTTON      "按照学号查询",IDC_FOLLOW_ID,321,38,67,15
+    PUSHBUTTON      "按照姓名查询",IDC_FOLLOW_NAME,321,70,67,15
+    PUSHBUTTON      "按照籍贯查询",IDC_FOLLOW_ADDRESS,321,102,67,15
+    ICON            IDI_IMAGE,IDC_STATIC,345,224,20,20
+    GROUPBOX        "性别",IDC_STATIC,26,215,125,24
+    CONTROL         "男",IDC_BOY,"Button",BS_AUTORADIOBUTTON | WS_GROUP,55,
+                    225,24,10
+    CONTROL         "女",IDC_GIRL,"Button",BS_AUTORADIOBUTTON,111,225,24,10
+    LTEXT           "年龄",IDC_AGE,180,221,17,8
+    EDITTEXT        IDC_AGE1,202,221,76,14,ES_AUTOHSCROLL
+END
+
+IDD_PASSWORD_DIALOG DIALOG DISCARDABLE  0, 0, 235, 133
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "登录界面"
+FONT 10, "System"
+BEGIN
+    DEFPUSHBUTTON   "登录",IDOK,68,89,50,14
+    PUSHBUTTON      "取消",IDCANCEL,132,89,50,14
+    LTEXT           "用户名：",IDC_STATIC,36,36,34,8
+    EDITTEXT        IDC_USER_EDIT,88,33,92,14,ES_AUTOHSCROLL
+    LTEXT           "密码：",IDC_STATIC,43,60,27,8
+    EDITTEXT        IDC_PWD_EDIT,88,56,92,14,ES_PASSWORD | ES_AUTOHSCROLL
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404b0"
+        BEGIN
+            VALUE "Comments", "\0"
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "StuAdo Microsoft 基础类应用程序\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "StuAdo\0"
+            VALUE "LegalCopyright", "版权所有 (C) 2014\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "StuAdo.EXE\0"
+            VALUE "PrivateBuild", "\0"
+            VALUE "ProductName", "StuAdo 应用程序\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+            VALUE "SpecialBuild", "\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_STUADO_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 407
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 276
+    END
+
+    IDD_PASSWORD_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 126
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MENU1 MENU DISCARDABLE 
+BEGIN
+    POPUP "数据操作"
+    BEGIN
+        MENUITEM "添加",                        IDC_ADD
+        MENUITEM "删除",                        IDC_DELETE
+        MENUITEM "修改",                        IDC_MODIFY
+        MENUITEM "退出",                        IDC_EXITSYS
+    END
+    POPUP "数据查询"
+    BEGIN
+        MENUITEM "按照学号",                    IDC_FOLLOW_ID
+        MENUITEM "按照姓名",                    IDC_FOLLOW_NAME
+        MENUITEM "按照籍贯",                    IDC_FOLLOW_ADDRESS
+        MENUITEM "查询所有",                    IDC_LISTALL
+    END
+    POPUP "背景音乐"
+    BEGIN
+        MENUITEM "播放",                        ID_PLAY_MUSIC
+        MENUITEM "停止",                        ID_STOP_MUSIC
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_TOOLBAR1 TOOLBAR DISCARDABLE  28, 25
+BEGIN
+    BUTTON      IDC_ADD
+    BUTTON      IDC_DELETE
+    BUTTON      IDC_MODIFY
+    BUTTON      IDC_LISTALL
+    BUTTON      ID_PLAY_MUSIC
+    BUTTON      ID_STOP_MUSIC
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_TOOLBAR1            BITMAP  DISCARDABLE     "res\\toolbar1.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ABOUTBOX            "关于 StuAdo(&A)..."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_PLAY_MUSIC           "播放背景音乐\n播放背景音乐"
+    ID_STOP_MUSIC           "停止背景音乐\n停止背景音乐"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDC_ADD                 "添加数据\n添加数据"
+    IDC_DELETE              "删除数据\n删除数据"
+    IDC_MODIFY              "修改数据\n修改数据"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDC_LISTALL             "查询所有\n查询所有"
+    IDC_EXITSYS             "退出系统\n退出系统"
+    IDC_FOLLOW_ID           "按照学号查询\n按照学号查询"
+    IDC_FOLLOW_NAME         "按照姓名查询\n按照姓名查询"
+    IDC_FOLLOW_ADDRESS      "按照籍贯查询\n按照籍贯查询"
+END
+
+#endif    // Chinese (中国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE 4, 2
+#pragma code_page(936)
+#endif //_WIN32
+#include "res\StuAdo.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.chs\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
